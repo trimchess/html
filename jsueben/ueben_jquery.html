@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Template based on stale sheet lib/css/design.css, 2 blocs with header and footer -->
+		<meta charset="windows-1252" />
+		<title>"JS &Uuml;bungsseite"</title>
+		<!-- CSS template -->
+		<link rel="stylesheet" type="text/css" media="screen" href="lib/css/design.css" />
+		<!-- js template -->
+		<script type="text/javascript1.5" src="lib/js/jquery-1.8.2.js"></script>
+		<script type="text/javascript1.5" src="lib/js/jquery-ui-1.9.1.custom.js"></script>
+		<script type="text/javascript1.5" src="lib/js/script.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript1.1">
+		sum(3,4);
+		sum();
+		document.writeln(typeof sum + "<br />");
+		document.write("Returnwert der anonymen Funktion: <i>" + anonymefkt() + "</i><br />");
+		testscope();
+		var sum = oneToThousand();
+		document.write("Summe = " + sum + "<br />");
+		oneToThousandWithCallBack(function(data)
+		{
+			document.write("Summe mit Callback = " +data + "<br />");
+		});
+
+		facultyWithCallBack(function(data)
+		{
+			document.write("Fakultaet mit Callback = " +data + "<br />");
+		});
+
+		document.write("Name = " + person.nachname  + "<br />");
+		document.write("Company = " + person.company.cname  + ", Department = " + person.company.cdepartment + "<br />");
+		person.ort = "Trimbach";
+		document.write("Wohnort = " + person.ort + "<br />");
+		var myBoolean = new Boolean();
+		document.write("Boolean-Type = " + typeof myBoolean +"<br />");
+		alert(document.location.href);
+		const PI = 3.14;
+
+		</script>
+	<body>
+</html>

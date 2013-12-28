@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Template based on stale sheet lib/css/design.css, 2 blocs with header and footer -->
+		<meta charset="windows-1252" />
+		<title>"JS Ereignisse"</title>
+		<!-- CSS template -->
+		<link rel="stylesheet" type="text/css" media="screen" href="lib/css/design.css" />
+		<!-- js template -->
+		<script type="text/javascript1.1" src="lib/js/script.js"></script>
+	</head>
+	<body>
+	 <h3>Berechnet die Fakult&auml;t</h3><br />
+	   <script>
+	     function calcFac()
+	     {
+	       n = document.Formular.number.value;
+	       //if ((n.length == 0) || (n < 0) || (typeof n != 'number'))
+	       if ((n.length == 0) || (n < 0))
+	       { 
+	         alert("Eingabefehler: " + n + "!");
+	         return false;
+	       }
+	       else
+	       {
+           //document.write("Fakultät(" + n + ") = " + f7(n) + "<br />");
+           alert("Fakultät(" + n + ") = " + f7(n));
+           return true; 
+         }
+       }
+     </script>
+	   <table border="0" cellpadding="5" cellspacing="0" bgcolor="#E0E0E0">
+	     <form name="Formular" onsubmit="return calcFac()">
+          <tr>
+            <td align="right">Zahl: </td>
+            <td><input name="number" type="text" size="4" maxlength="4"></td>
+          </tr>
+          <tr>
+            <td><input type="submit" value=" Berechnen "></td>
+          </tr>
+       </form>
+    </table>
+  </body>
+</html>
+

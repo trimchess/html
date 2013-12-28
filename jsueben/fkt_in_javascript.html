@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Funktionen</title>
+    <link rel="stylesheet" type="text/css" href="lib/css/kap5_20.css" />
+  </head>
+  <body>
+    <h1>Die Verwendung von JavaScript-Standardfunktionen</h1>
+    <script type="text/javascript">
+			// Variable a mit einem Text mit Umlauten und Sonderzeichen
+			var a = "$§äöüß%&";
+			document.write("Wert von a: " + a + "<hr />");
+			var b = escape(a);  // Der Wert von a wird maskiert
+			document.write("Der maskierte Wert von a: " + b + "<hr />");
+			document.write("Rückwandlung mit unescape(): " +
+			unescape(b) + "<hr />");
+			var c = 4;
+			var d = 5;
+			var e = "Text";
+			document.write("Wert von c * d: " + eval("c * d") + "<hr />");
+			document.write("Wert von c * e: " + eval("c * e") + "<hr />");
+			document.write("isNaN() angewendet auf c * d: " +
+			isNaN(eval("c * d")) + "<hr />");
+			document.write("isNaN() angewendet auf c * e: " +
+			isNaN(eval("c * e")) + "<hr />");
+			var f = "3.14"; // Gleitkommazahl
+			document.write("parseFloat('3.14'): " + parseFloat(f)	+ "<hr />");
+			document.write("parseInt('3.14'): " + parseInt(f)	+ "<hr />");
+			// Gleitkommazahl mit folgendem alphanumerischem Text
+			var g = "3.14 ist der Wert von PI";
+			document.write("parseFloat('3.14 ist der Wert von PI'): " +
+			parseFloat(g) + "<hr />");
+			document.write("parseInt('3.14 ist der Wert von PI'): " +
+			parseInt(g) + "<hr />");
+			// Der Gleitkommazahl ist ein Text vorangestellt
+			var h = "Der Wert von PI ist 3.14";
+			document.write("parseFloat('Der Wert von PI ist 3.14'): " +
+			parseFloat(h) + "<hr />");
+			document.write("parseInt('Der Wert von PI ist 3.14'): " +
+			parseInt(h) + "<hr />");
+    </script>
+  </body>
+</html>

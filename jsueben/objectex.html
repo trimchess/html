@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>objecttest</title>
+
+  <meta charset="ISO-8859-1">
+  <meta name="description" content="">
+  <meta name="author" content="Martin Wirz">
+  <meta name="keywords" content="">
+  <meta name="generator" content="Webocton - Scriptly (www.scriptly.de)">
+  <script type="text/javascript">
+    function myStringFunction(content)
+    {
+      var ms = new String(content);
+      document.writeln(ms + "<br />");
+      document.writeln("Stringlänge: " + ms.length + "<br />");
+      document.writeln("Klassenname: " + ms.className + "<br />");
+    }
+    function myDateFunction()
+    {
+      oneDay = 86400*1000;
+      var myDate = new Date(1324151550009 + 2*oneDay);
+      document.write("Date is: " + myDate.getDate() + ".");
+      document.write(myDate.getMonth() + 1 + ".");
+      document.write(myDate.getFullYear() + "<br />");
+    }
+    
+  </script>
+</head>
+
+<body>
+  <script>
+    myStringFunction("Mein Name ist Hase");
+    myDateFunction();
+  </script>
+</body>
+</html>

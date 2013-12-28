@@ -1,0 +1,70 @@
+/* CSS base template */
+
+body {
+  font: 100.01% Verdana, Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+/* Page */
+#page {
+  width: 80%;
+  margin: 0px auto;
+  background-color: lightgreen;
+}
+
+/* Header */
+#header {
+  padding: 20px;
+  background-color:lightblue;
+}
+
+/* Control (menu) */
+#control {
+  float: left;
+  width:18%;
+  padding: 30px;
+  background-color: #EEEEEE;
+  border: 1px solid black;
+  margin: 0px auto;
+  
+}
+
+/* Content */
+#content {
+  background-color: lightgreen;
+  margin-left: 260px;
+  padding: 0px;
+}
+
+
+/* Footer */
+#footer {
+  clear: both;
+  padding: 20px;
+  background-color:lightblue;
+}
+
+/* Mouse control */
+a:link {
+	color: blue;
+	text-decoration:none;
+}
+
+a:visited {
+	color: purple;
+	text-decoration:none;
+}
+
+a:active {
+	background-color: yellow;
+	text-decoration:none;
+}
+
+a:hover {
+	color:red;
+	text-decoration:none;
+}

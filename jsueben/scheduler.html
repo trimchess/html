@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h4>Start of Script Section</h4>
+		<script type="text/javascript1.1">
+			var schedule = function(timeout, callbackfunction)
+			{
+				return
+				{
+					start: function()
+					{
+						setTimeout(callbackfunction, timeout)
+					}
+				};
+			};
+
+			(function()
+			{
+				var timeout = 1000; // 1 second
+				var count = 0;
+				schedule(timeout, function doStuff()
+				{
+					console.log(++ count);
+					schedule(timeout, doStuff);
+				}).start(timeout);
+			})();
+		</script>
+		<h4>End of Script Section</h4>
+</html>
+
+
+
+
+

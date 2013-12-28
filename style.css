@@ -1,0 +1,106 @@
+	body {
+	  background-color: #FFCC66;
+	  background-image: url("butterfly.gif");
+	  background-repeat: no-repeat;
+	  background-attachment: scroll;
+	  background-position: center center;
+	  
+		margin-top: 30px;
+		margin-right: 40%;
+		margin-bottom: 10px;
+	  margin-left: 40px;
+	}
+
+	h1 {
+	  color: #990000;
+	  background-color: #FC9804;
+	  font-family: arial, verdana, sans-serif; 
+	  font-weight: bold;
+	  font-size: 120%;
+	  padding: 20px 20px 20px 80px;
+		
+		border-top-width: thick;
+		border-top-style: dotted;
+		border-top-color: red;
+
+		border-bottom-width: thick;
+		border-bottom-style: solid;
+		border-bottom-color: blue;
+
+		border-right-width: thick;
+		border-right-style: solid;
+		border-right-color: green;
+
+		border-left-width: thick;
+		border-left-style: solid;
+	  border-left-color: orange;
+	}
+	
+	
+	a:link {
+		color: blue;
+		text-decoration:none;
+	}
+
+	a:visited {
+		color: purple;
+		text-decoration:none;
+	}
+
+	a:active {
+		background-color: yellow;
+		text-decoration:none;
+	}
+
+	a:hover {
+		color:red;
+		text-decoration:none;
+	}
+	
+	a.weisswein {
+		color: white;
+	}
+
+	a.weisswein:hover {
+		color: red;
+	}
+
+	a.rotwein {
+		color: red;
+	}
+
+	a.rotwein:hover {
+		color: white;
+	}
+	
+	#k1-2 {
+		color: red;
+	}
+	
+	#k1-3 {
+		color: blue;
+	}
+	
+	span.tugend {
+		color:grey;
+	}
+	
+	span.gut {
+		color:purple;
+		font-style: italic;
+		font-weight: bold;
+	}
+	
+	#ende {
+		color:purple;
+		font-style: italic;
+		font-weight: bold;
+		font-size: 200%;
+	}
+	
+	#box1 {
+	  margin-top: 70px;
+	  margin-right: 40px;
+	  margin-bottom: 70px;
+	  margin-left: 70px;
+	}

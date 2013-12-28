@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Template based on stale sheet lib/css/design.css, 2 blocs with header and footer -->
+		<meta charset="windows-1252" />
+		<title>"JS Ereignisse"</title>
+		<!-- CSS template -->
+		<link rel="stylesheet" type="text/css" media="screen" href="lib/css/design.css" />
+		<!-- js template -->
+		<script type="text/javascript1.1" src="lib/js/script.js"></script>
+	</head>
+	<body>
+	 <h4>Berechnet die Fakult&auml;t einer gegebenen Zahl</h4><br />
+	   <script>
+	     function calcFac()
+	     {
+	       var n = parseInt(document.Formular.number.value);
+	       if ((n.length == 0) || (n < 0) || isNaN(n))
+	       {
+	         alert("Eingabefehler: " + document.Formular.number.value + "!");
+	         document.Formular.number.value = "";
+	         document.Formular.number.focus();
+	         return false;
+	       }
+	       else
+	       {
+           alert(n + "! = " + f7(n));
+           document.Formular.number.value = "";
+           document.Formular.number.focus();
+           return true;
+         }
+       }
+       
+     </script>
+	   <table border="0" cellpadding="5" cellspacing="0">
+	     <form name="Formular">
+          <tr>
+            <td align="left">Zahl: </td>
+            <td><input name="number" type="number" size="3" maxlength="3"></td>
+          </tr>       
+          <tr>
+            <td><input type="button" onclick="calcFac()" value=" Fakult&auml;t "></td>
+          </tr>
+       </form>
+    </table>
+    <script>
+      document.Formular.number.focus();
+		</script>
+  </body>
+</html>
+

@@ -1,0 +1,38 @@
+body {
+  font: 100.01% Verdana, Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+#seite {
+  width: 780px;
+  margin: 0 auto;
+}
+
+#kopfbereich {
+  padding: 20px;
+  background-color:lightblue;
+}
+
+#inhalt {
+  background-color: lightgreen;
+  margin-left: 252px;
+  padding: 20px;
+}
+
+#steuerung {
+  float: left;
+  width:250px;
+  padding: 20px;
+  background-color: #EEEEEE;
+  border: 1px solid black;
+}
+
+#fussbereich {
+  clear: both;
+  padding: 20px;
+  background-color:lightblue;
+}
